@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRO-BOOTSTRAP</title>
+    <link rel="icon" href="assets/img/Icon.png">
+    <!-- Enlace al archivo de Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 30px; /* Reducir el espacio entre el título superior y el contenido */
+            padding-bottom: 30px; /* Reducir el espacio entre el título inferior y el contenido */
+        }
+        .title-text {
+            color: white;
+            background-color: #4169e1;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .footer-text {
+            color: rgba(255, 255, 255, 0.8); /* Color blanco con 80% de opacidad */
+            background-color: #4169e1;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .spacer {
+            background-color: #f8f9fa; /* Fondo gris claro */
+            height: 30px; /* Altura del espacio en blanco */
+            margin-bottom: 30px; /* Espacio en la parte inferior */
+        }
+        .card-container {
+            background-color: #f8f9fa; /* Fondo gris claro detrás de las imágenes */
+            padding: 20px; /* Añadir espacio alrededor del contenedor */
+            border-radius: 5px; /* Agregar bordes redondeados */
+            margin-bottom: 30px; /* Espacio en la parte inferior */
+        }
+        .card {
+            height: 100%; /* Para asegurar que todas las tarjetas tengan la misma altura */
+        }
+        .card-img-top {
+            height: 200px; /* Ajustar el tamaño de todas las imágenes */
+            object-fit: cover; /* Mantener la relación de aspecto y cortar la imagen si es necesario */
+            border-radius: 5px 5px 0 0; /* Ajustar la esquina superior de la imagen */
+        }
+    </style>
+</head>
+<body>
+    <!-- Título superior -->
+    <div class="container">
+        <h1 class="title-text text-center">PROFILE CARD DESIGN</h1>
+    </div>
+
+    <!-- Contenedor de tarjetas -->
+    <div class="container card-container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Tarjeta 1 -->
+            <div class="col">
+                <div class="card">
+                    <img src="assets/img/Imagen 1.avif" class="card-img-top" alt="Paisaje 1">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">PERSON ONE</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
+                        <button class="btn btn-primary">Botón 1</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="col">
+                <div class="card">
+                    <img src="assets/img/Imagen 2.avif" class="card-img-top" alt="Paisaje 2">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">PERSON TWO</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
+                        <button class="btn btn-primary">Botón 2</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="col">
+                <div class="card">
+                    <img src="assets/img/Imagen 3.avif" class="card-img-top" alt="Paisaje 3">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">PERSON THREE</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
+                        <button class="btn btn-primary">Botón 3</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Título inferior -->
+    <div class="container">
+        <h2 class="footer-text text-center">HTML CSS BOOTSTRAP</h2>
+    </div>
+
+    <!-- Enlace al archivo de Bootstrap JavaScript (opcional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
